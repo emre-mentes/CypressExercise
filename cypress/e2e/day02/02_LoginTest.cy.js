@@ -58,12 +58,7 @@ describe('Kitap Yurdu', () => {
                 
             //cy.find() şeklinde kullanılmaz
   
-
-
         //within()
-
-
-      
        cy.get('div.category-container').first().within(() => {
        cy.get("[alt='Ders Kitapları']").click()
         })
