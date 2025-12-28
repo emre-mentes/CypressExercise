@@ -18,5 +18,7 @@ describe("my First Test", () => {
     cy.visit("https://www.speedyli.com/");
     cy.title().should("include", "Rental");
     cy.title().should("eq", "Speedly Rental Car | Premium Car Rental");
+    // eq esitmi demek, bu yüzden tamanini yazmak zorundayiz
+
   });
 });
