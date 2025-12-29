@@ -22,7 +22,6 @@ describe('Login Test', () => {
 
     })
 
-
     it.only('Negative Test', () => {
 
         const username= "emreowen57@gmail.com"
