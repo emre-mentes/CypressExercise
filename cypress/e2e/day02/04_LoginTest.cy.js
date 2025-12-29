@@ -16,9 +16,9 @@ describe('Login Test', () => {
        
        cy.get('#login-button').click();
 
-        cy.url().should('include', 'account')
+       cy.url().should('include', 'account')
 
-        cy.get("[class='menu top login']").should('contain', 'Emre')
+       cy.get("[class='menu top login']").should('contain', 'Emre')
 
     })
 
