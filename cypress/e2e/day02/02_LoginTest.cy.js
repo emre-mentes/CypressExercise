@@ -40,7 +40,6 @@ describe('Kitap Yurdu', () => {
         
         cy.title().should('eq', 'Kitapyurdu, Kitapla buluşmanın en kolay yolu')
 
-
         //5) include.text
          cy.get('.login > a').should('include.text', 'Giriş Yap')
         //locate edilen yerdeki metin 'Giriş Yap' içeriyor mu?
