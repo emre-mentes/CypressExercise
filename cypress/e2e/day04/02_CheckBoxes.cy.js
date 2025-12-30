@@ -12,7 +12,7 @@ describe('CheckBoxes', () => {
         //first() = eq(0)
 
         cy.get('#layered_category_4').should('not.be.checked')
-        //should('not.be.checked') -> Tıklı olmadığı test etti
+        //should('not.be.checked') -> Tıklı olmadığıni test etti
 
         //TIKLA
         cy.get('#layered_category_4').check().should('be.checked')
@@ -20,6 +20,25 @@ describe('CheckBoxes', () => {
         //TIKLAMAYI KALDIR
         cy.get('#layered_category_4').uncheck().should('not.be.checked')
     })
+
+
+
+    it.only('sahsiyet', () => {
+        cy.visit('https://the-internet.herokuapp.com/checkboxes')
+
+
+        cy.get('#checkboxes > :nth-child(1)').should('not.be.checked')
+        //should('not.be.checked') -> Tıklı olmadığıni test etti
+
+        //TIKLA
+        cy.get('#checkboxes > :nth-child(1)').check().should('be.checked')
+
+        //TIKLAMAYI KALDIR
+       cy.get('#checkboxes > :nth-child(1)').uncheck().should('not.be.checked')
+    })
+
+
+
 
     it('All CheckBoxes 1', () => {
         cy.visit('http://automationpractice.com/index.php')
@@ -53,7 +72,7 @@ describe('CheckBoxes', () => {
     })
 
 
-    it.only('All CheckBoxes 2', () => {
+    it('All CheckBoxes 2', () => {
         cy.visit('http://automationpractice.com/index.php')
         cy.get('.sf-with-ul').eq(0).click()
 
