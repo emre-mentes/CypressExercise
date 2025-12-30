@@ -2,7 +2,7 @@
 
 describe('SuperDomain', () => {
 
-    it('Test Case 1', () => {
+    it.skip('Test Case 1', () => {
         cy.visit('https://www.amazon.com/')
         cy.wait(3000)
         cy.visit('https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice')
@@ -11,15 +11,19 @@ describe('SuperDomain', () => {
 
     })
 
-    it.skip('Test Case 1,5', () => {
+    it('Test Case 1,5', () => {
         cy.visit('https://www.cypress.io/')
         cy.wait(3000)
 
         cy.visit('https://docs.cypress.io/guides/overview/why-cypress')
 
+
+        //Cypress güvenlik gereği “farklı domain” (superdomain) geçişlerine izin vermez.
+
+
     })
 
-    it.skip('Test Case 2', () => {
+    it('Test Case 2', () => {
 
         cy.visit('https://www.google.com/')
         cy.wait(3000)

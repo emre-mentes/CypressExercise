@@ -11,11 +11,9 @@ describe('HoverOver', () => {
 
         cy.wait(3000)
 
-
         cy.contains('Change country/region.').click()
 
         cy.get('#icp-dropdown').select('Turkey (Türkiye)',{force: true})
-
         //{ force: true }, Cypress’e normalde tıklanamaz veya görünmez olsa bile
         //  bu işlemi zorla yap demektir.
 
