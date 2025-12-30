@@ -77,11 +77,16 @@ describe('CheckBoxes', () => {
         cy.get('.sf-with-ul').eq(0).click()
 
         cy.get("input[type='checkbox']").click({ multiple: true })
-        // click() -> tek bir web elemenmte tıklar
+
+        // click() -> tek bir web elemente tıklar
         // click({ multiple: true }) bu şekilde tüm web elementlere tıklar
 
         cy.get("input[type='checkbox']").parent().should('have.class', 'checked')
         //19 checkboxsı tıklanmış mı diye assert etti.
+
+
+        
+
 
     })
 
