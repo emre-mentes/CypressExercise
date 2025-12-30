@@ -4,33 +4,39 @@ describe('Scroll', () => {
 
     it('Scrolintoview', () => {
 
-        cy.visit('https://qa-environment.koalaresorthotels.com/')
+        cy.visit('https://www.kitapyurdu.com/')
+
+        cy.get('#cookiescript_accept').click()
 
         cy.wait(3000)
 
-        cy.get('.col-md-7 > .mb-4').scrollIntoView()
+        cy.contains("Kırtasiye, Kültür-Sanat").scrollIntoView()
         //Locate ettiğimiz yerin altına sayfayı kaydırır
 
-        cy.wait(3000)
-
-        cy.get(':nth-child(9) > .container > .justify-content-center > .col-md-7 > h2')
-        .scrollIntoView({duration: 3000})
-        //{duration: 8000} 8 saniye içerisinde locate edilen yere gel
+        cy.wait(5000)
 
 
-        //scrollTo(x,y)
-        cy.scrollTo(0,0)
+        cy.get('.login > a').scrollIntoView({duration: 3000})
+   //   //{duration: 8000} 8 saniye içerisinde locate edilen yere gel
+
+
+   // Sayfayı en üste kaydırıyoruz
+        cy.scrollTo(0, 0)
+        // (x:0, y:0) koordinatına giderek sayfanın tepesine çıkıyor
 
         cy.wait(2000)
 
+        // Sayfayı yatay 0, dikey 500px kadar kaydırıyoruz
         cy.scrollTo(0, 500)
 
         cy.wait(2000)
 
+        // Alternatif olarak scrollTo değerini string ile de verebiliriz
         cy.scrollTo('500px')
 
         cy.wait(2000)
 
+        // Sayfayı dikey -500px kaydırarak biraz yukarı çıkıyoruz
         cy.scrollTo(0, -500)
 
     })
