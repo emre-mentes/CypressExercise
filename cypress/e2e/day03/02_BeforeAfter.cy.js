@@ -2,19 +2,19 @@
 
 describe('Before After', () => {
     before( () => {
-        cy.log('Her test dosyasından önce bir kere çalışacak')
+        cy.log('Her test dosyasından önce bir kere calisacak')
     })
 
     after( () => {
-        cy.log('Her test dosyasından sonra bir kere çalışacak')
+        cy.log('Her test dosyasından sonra bir kere calisacak')
     })
 
     beforeEach(() => {
-        cy.log('Her testen önce bir kere çalışacak')
+        cy.log('Her testen önce bir kere calisacak')
     })
 
     afterEach(() => {
-        cy.log('Her testen sonra bir kere çalışacak')
+        cy.log('Her testen sonra bir kere calisacak')
     })
 
     it('Test Case 1', () => {
