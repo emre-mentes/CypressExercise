@@ -11,6 +11,7 @@ describe('SuperDomain', () => {
 
     })
 
+    
     it('Test Case 1,5', () => {
         cy.visit('https://www.cypress.io/')
         cy.wait(3000)
