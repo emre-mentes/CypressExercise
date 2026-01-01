@@ -9,6 +9,7 @@ describe('Multiple Windows', () => {
 
         cy.get('h3').should('have.text', 'New Window')
     })
+    
 
     it.only('New Url', () => {
         cy.visit('https://the-internet.herokuapp.com/windows')
