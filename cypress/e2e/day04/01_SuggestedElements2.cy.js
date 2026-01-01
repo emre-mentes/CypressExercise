@@ -13,6 +13,7 @@ describe('Suggested Elements 2', () => {
 
        cy.get('.s-no-outline > .a-row > .a-size-base').should('be.visible')
 
+       
 
     })
 })
