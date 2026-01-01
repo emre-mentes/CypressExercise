@@ -9,7 +9,6 @@ describe('IFrame', () => {
         1) Plugin İndir
 
             https://www.npmjs.com/package/cypress-iframe
-
             npm install -D cypress-iframe
         
         2) Import Plugin
