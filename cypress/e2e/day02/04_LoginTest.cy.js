@@ -21,6 +21,7 @@ describe('Login Test', () => {
        cy.get("[class='menu top login']").should('contain', 'Emre')
 
     })
+    
 
     it.only('Negative Test', () => {
 
