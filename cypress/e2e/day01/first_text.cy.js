@@ -13,6 +13,7 @@ describe("my First Test", () => {
     //should assert islemi icin kullanilir
     //include; icermek demek
   });
+  
 
   it("TITLE TEST", () => {
     cy.visit("https://www.speedyli.com/");
