@@ -22,6 +22,7 @@ describe('Speedyli Rental Car', () => {
     cy.contains('button', 'Login').click()
 
 
+    
 
     })
 
