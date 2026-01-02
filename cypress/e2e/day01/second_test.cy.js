@@ -18,6 +18,7 @@ context('My Second Test', () => {
         cy.title().should('equal', 'Google')
     })
 
+    
     it('Search Test', () => {
         cy.get('[name="q"]',{timeout:5000}).type('fenerbahce{enter}') 
         
