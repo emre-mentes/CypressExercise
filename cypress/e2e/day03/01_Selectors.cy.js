@@ -35,5 +35,6 @@ describe('Selectors Examples', () => {
     // require('cypress-xpath')
     // yukarıdaki kodu e2e.cy.js dosayasına ekleyeceğiz
     
+    
     })
 })
