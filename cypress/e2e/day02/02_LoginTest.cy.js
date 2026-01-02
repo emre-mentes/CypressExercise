@@ -28,6 +28,7 @@ describe('Kitap Yurdu', () => {
         cy.get('.login > a').should('have.text', 'Giriş Yap')
         //locate edilen yerdeki metinde 'Giriş Yap' yazıyor mu? Var mı?
 
+        
         //2) cy.url().should()
         cy.url().should('include', 'kitapyurdu')
 
