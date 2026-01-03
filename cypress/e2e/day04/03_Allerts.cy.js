@@ -56,5 +56,6 @@ describe('Allerts', () => {
         })
 
         cy.get('#result').should('have.text', 'You entered: Cypress')
+        
     })
 })
