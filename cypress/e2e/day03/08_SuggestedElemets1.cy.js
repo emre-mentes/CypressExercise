@@ -3,6 +3,7 @@
 describe('Suggested Elements', () => {
 
     it('TestCase 1', () => {
+        
 
         cy.visit('https://www.google.com')
         cy.get('.gLFyf').type('Yahoo')
