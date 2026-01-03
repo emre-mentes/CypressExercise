@@ -73,6 +73,7 @@ describe('CheckBoxes', () => {
 
 
     it('All CheckBoxes 2', () => {
+        
         cy.visit('http://automationpractice.com/index.php')
         cy.get('.sf-with-ul').eq(0).click()
 
