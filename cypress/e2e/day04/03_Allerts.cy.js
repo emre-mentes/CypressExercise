@@ -42,6 +42,7 @@ describe('Allerts', () => {
         cy.get('#result').should('have.txt', 'You clicked: Cancel')
     })
 
+    
 
     it.only('Alert Text', () => {
 
