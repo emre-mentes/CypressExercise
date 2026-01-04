@@ -36,7 +36,6 @@ describe('Kitap Yurdu', () => {
         // cy.contains("Giriş Yap").click()
          //cy.get('.text-form-title').should('be.visible')
 
-
         //4) cy.title()
         
         cy.title().should('eq', 'Kitapyurdu, Kitapla buluşmanın en kolay yolu')
