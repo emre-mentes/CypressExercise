@@ -33,7 +33,6 @@ describe('Login Menu Test', () => {
             expect(emailtext2).to.equal('E-Posta:')
         })
 
-
     })
 
 })
