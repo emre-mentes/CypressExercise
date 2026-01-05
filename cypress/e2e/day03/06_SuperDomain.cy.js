@@ -21,6 +21,7 @@ describe('SuperDomain', () => {
 
         //Cypress güvenlik gereği “farklı domain” (superdomain) geçişlerine izin vermez.
 
+        
 
     })
 
