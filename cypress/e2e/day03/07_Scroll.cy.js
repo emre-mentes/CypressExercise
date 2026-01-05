@@ -36,6 +36,7 @@ describe('Scroll', () => {
 
         cy.wait(2000)
 
+        
         // Sayfayı dikey -500px kaydırarak biraz yukarı çıkıyoruz
         cy.scrollTo(0, -500)
 
