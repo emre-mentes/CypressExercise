@@ -32,6 +32,7 @@ describe('Selectors Examples', () => {
     //cy.xpath("//a[@class='gb_Z']").should('include.text', 'Gmail')
     // xpath() algılanmaz ise 1. satıra üsteki kodu yazabilirsiniz
 
+    
     // require('cypress-xpath')
     // yukarıdaki kodu e2e.cy.js dosayasına ekleyeceğiz
     
