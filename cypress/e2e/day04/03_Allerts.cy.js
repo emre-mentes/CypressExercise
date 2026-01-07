@@ -2,7 +2,7 @@
 
 describe('Allerts', () => {
 
-    it('Allert Test', () => {
+    it.skip('Allert Test', () => {
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.wait(3000)
         cy.get(':nth-child(1) > button').click()
@@ -12,7 +12,7 @@ describe('Allerts', () => {
         cy.get('#result').should('have.text', 'You successfully clicked an alert')
     })
 
-    it('Accept Alert Test', () => {
+    it.skip('Accept Alert Test', () => {
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.wait(3000)
 
@@ -24,7 +24,7 @@ describe('Allerts', () => {
 
     })
 
-    it('Dismiss Alert', () => {
+    it.skip('Dismiss Alert', () => {
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.wait(3000)
 
@@ -39,12 +39,13 @@ describe('Allerts', () => {
             //return true -> default olarak tıkla demek
         })
 
-        cy.get('#result').should('have.txt', 'You clicked: Cancel')
+
+        cy.get('#result').should('have.text', 'You clicked: Cancel')
     })
 
     
 
-    it.only('Alert Text', () => {
+    it('Alert Text', () => {
 
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.wait(3000)
@@ -52,11 +53,12 @@ describe('Allerts', () => {
         cy.window()//pop up pencereleri kontrol ediyoruz
         .then(($windowsElement) => {
             //$windowsElement -> promt'a bilgi girer
-            cy.stub($windowsElement, 'prompt').returns('Cypress')
-            cy.get(':nth-child(3) > button').click()
+            cy.stub($windowsElement, 'prompt').returns('Mentes')  
         })
 
-        cy.get('#result').should('have.text', 'You entered: Cypress')
+         cy.get(':nth-child(3) > button').click()
+
+        cy.get('#result').should('have.text', 'You entered: Mentes')
         
     })
 })
