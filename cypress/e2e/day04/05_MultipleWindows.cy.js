@@ -19,8 +19,6 @@ describe('Multiple Windows', () => {
             // prop(), jQuery'de attribute değerini alan bir fonksiyon
 
 
-
-            
         cy.visit(newURL)
         })
     })
