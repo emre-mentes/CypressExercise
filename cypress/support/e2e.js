@@ -15,5 +15,9 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-iframe';
+//require('cypress-iframe');
+
 
 require('cypress-xpath');
+
