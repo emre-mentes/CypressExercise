@@ -29,6 +29,7 @@ describe('File Upload', () => {
         .attachFile(path3).wait(2000)
     })
 
+    
     it('Multiple File Upload 2', () => {
         cy.visit('https://davidwalsh.name/demo/multiple-file-upload.php')
 
